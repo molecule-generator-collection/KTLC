@@ -11,8 +11,10 @@ import sys
 
 
 ac2os = 4.32*(10**-4)
+
 peak_hight_para = 8
 d_for_peakfinder = 50
+background = 0.01
 
 def peak_find(x, y):
 
@@ -95,10 +97,10 @@ print(peak_center)
 guess = []
 
 for i in range(len(peak_center)):
-	peak_paraset = [5.0, peak_center[i], peak_hight[i]]
+#	peak_paraset = [5.0, peak_center[i], peak_hight[i]]
+	peak_paraset = [peak_hight[i], peak_center[i], 2.0]
 	guess.append(peak_paraset)
 
-background = 0.01
 
 guess_total = []
 for i in guess:
@@ -129,7 +131,7 @@ for n,i in enumerate(y_list):
     opt_peak_info.append(opt_peak_nm)
 
 print ('After peak fitting, peak positions and their oscillator strengths')
-print (f'parameter peak_hight_para={peak_hight_para} and  d_for_peakfinder={d_for_peakfinder}')
+print (f'Parameters background = {background}, peak_hight_para={peak_hight_para}, d_for_peakfinder={d_for_peakfinder}')
 print (opt_peak_info)
 print (os)
 
