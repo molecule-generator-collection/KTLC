@@ -1,5 +1,5 @@
-[294 259]
+[292]
 After peak fitting, peak positions and their oscillator strengths
 Parameters background = 0.01, peak_hight_para=10, d_for_peakfinder=5
-[288, '-']
-[1.252574327690245, 1.3102831996477942]
+[277]
+[1.1024703083609453]
