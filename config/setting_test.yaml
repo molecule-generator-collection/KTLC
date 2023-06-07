@@ -1,0 +1,34 @@
+#Input molecule
+index: 1
+smiles: CC
+
+result_prefix: Test_
+
+#Initial conformation
+init_Gau_option: opt satkoopmans
+init_functional: B3LYP
+init_basis: 6-31G*
+init_solvent: '0' #0:water
+
+#Calculation in parameter optimization
+opt_Gau_option: "satkoopmans"
+opt_functional: lc-blyp #lc-blyp, cam-b3lyp,  B3LYP
+opt_basis: 6-31G*
+opt_solvent: '0'
+
+#Calculation for the best prameter
+calc_best_parameter: True
+best_Gau_option: satkoopmans deen vip vea homolumo dipole uv
+
+#basic Gaussian setting
+gau_core: 10
+gau_mem: 5GB
+gau_time: 36000 #second
+
+#Setting of Bayesian optimization
+bo_strategy: EI #EI, random
+bo_init_num: 2
+bo_search_num: 30
+bo_stop_threshold: 0.01 #threshold of Difference (eV) for stopping search
+
+
