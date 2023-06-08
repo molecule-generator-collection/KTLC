@@ -32,7 +32,7 @@ python param_opt_main -c config/setting_test.yaml
 
 ## Result of the optimization
 
-All result are stored in the \{result_prefix\}\_result\{index\} directory. Here, "result_prefix" and "index" are the options in the config file. 
+All results are stored in the \{result_prefix\}\_result\{index\} directory. Here, "result_prefix" and "index" are the options in the config file. 
 The summaries of the structural optimization, the optimization of the range-separated parameters, and the final result with the optimized parameters are contained in init_calc_result_dict.pkl, bo_calc_result_dict.pkl, and best_param_calc_result_dict.pkl, respectively. 
 
 
