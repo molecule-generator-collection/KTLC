@@ -2,7 +2,7 @@
 
 KTLC is a new density functional that uses the optimal range-separated parameter μ for a given molecule [1]. The optimal μ can be easily predicted using [Google colaboratory (ColabKTLC)](https://colab.research.google.com/github/molecule-generator-collection/KTLC/blob/main/ColabKTLC.ipynb). 
 
-[1] K. Terayama, Y. Osaki, T. Fujita, R. Tamura, M. Naito, K. Tsuda, T. Matsui, M. Sumita, [Koopmans’ Theorem-Compliant Long-range Corrected (KTLC) Density Functional Mediated by Black-box Optimization and Data-Driven Prediction for Organic Molecules](https://doi.org/10.1021/acs.jctc.3c00764), Journal of Chemical Theory and Computation, 2023, Vol.19, No.19, 6770–6781 [DOI: 10.1021/acs.jctc.3c00764]
+[1] K. Terayama, Y. Osaki, T. Fujita, R. Tamura, M. Naito, K. Tsuda, T. Matsui, M. Sumita, [Koopmans’ Theorem-Compliant Long-range Corrected (KTLC) Density Functional Mediated by Black-box Optimization and Data-Driven Prediction for Organic Molecules](https://doi.org/10.1021/acs.jctc.3c00764), _Journal of Chemical Theory and Computation_, 2023, Vol.19, No.19, pp.6770–6781 [DOI: 10.1021/acs.jctc.3c00764]
 
 
 
