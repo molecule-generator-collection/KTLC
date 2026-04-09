@@ -1,0 +1,8 @@
+# Environment pinned for reproducible KTLC μ prediction
+# Mordred 1.2.0 is old, so keep NumPy/Pandas below the versions that often
+# trigger binary-compatibility issues in mixed environments.
+numpy<2
+pandas<2.2
+lightgbm==3.1.1
+rdkit==2024.3.5
+mordred==1.2.0
