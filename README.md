@@ -5,7 +5,39 @@ KTLC is a new density functional that uses the optimal range-separated parameter
 [1] K. Terayama, Y. Osaki, T. Fujita, R. Tamura, M. Naito, K. Tsuda, T. Matsui, M. Sumita, [Koopmans’ Theorem-Compliant Long-range Corrected (KTLC) Density Functional Mediated by Black-box Optimization and Data-Driven Prediction for Organic Molecules](https://doi.org/10.1021/acs.jctc.3c00764), _Journal of Chemical Theory and Computation_, 2023, Vol.19, No.19, pp.6770–6781 [DOI: 10.1021/acs.jctc.3c00764]
 
 
+## SMILES-to-μ prediction with a Python script
 
+This repository includes `KTLC_pred_mu.py` for predicting the optimal range-separated parameter μ directly from SMILES strings. The script reads the pretrained model files stored in `model/`.
+
+### Environment setup
+
+For example, you can prepare an isolated environment with `uv` as follows:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+
+cd KTLC
+uv venv --python 3.11
+source .venv/bin/activate
+uv pip install -r requirements-predict.txt
+```
+
+### Usage
+
+To predict μ for a SMILES string, run:
+
+```bash
+python KTLC_pred_mu.py "CCO"
+```
+
+By default, the script prints a human-readable result to the console, including the input SMILES, the predicted μ value, and the estimated standard deviation.
+
+If JSON output is preferred, use the --json option:
+
+```bash
+python KTLC_pred_mu.py "CCO" --json
+```
 
 # Optimization of the range-separated parameters using Bayesian opitmization
 
