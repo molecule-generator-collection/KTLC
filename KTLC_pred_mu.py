@@ -31,6 +31,8 @@ from rdkit.Chem.Fingerprints import FingerprintMols
 from rdkit.ML.Descriptors import MoleculeDescriptors
 from rdkit import RDLogger
 RDLogger.DisableLog('rdApp.warning')
+import warnings
+warnings.filterwarnings("ignore", category=SyntaxWarning, module="mordred")
 
 DEFAULT_P_MODEL = "lightGBM"
 DEFAULT_FEATURE = "All_Desc"
