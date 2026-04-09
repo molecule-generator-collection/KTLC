@@ -14,9 +14,7 @@ This repository includes `KTLC_pred_mu.py` for predicting the optimal range-sepa
 For example, you can prepare an isolated environment with `uv` as follows:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-export PATH="$HOME/.local/bin:$PATH"
-
+git clone https://github.com/molecule-generator-collection/KTLC.git
 cd KTLC
 uv venv --python 3.11
 source .venv/bin/activate
